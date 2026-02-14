@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    border: none;
+}
+body{
+    width: 100%;
+    height: 100dvh;
+    background-color: #F6FBFE;
+}
+.main{
+    width: 100%;
+    height: 285dvh;
+}
+header{
+    background-color: #326FE9;
+    width: 100%;
+    height: 14dvh;
+    display: grid;
+    grid-template-rows:1fr ;
+    grid-template-columns: 2fr 5fr;
+    align-items: center;
+    grid-template-areas: "logo nav";
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125%;
+}
+.logo img{
+    width: 6dvw;
+    height: auto;
+}
+.logo span{
+    font-size: 200%;
+    margin-left: 15px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-style: normal;
+}
+.logo a{
+    margin-left: 10%;
+}
+.cont_login{
+    width: 90%;
+    background-color: #73BAF9;
+    margin-top: 2%;
+    height: 79dvh;
+    border-radius: 60px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 1.2s ease;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.cont_login h1{
+    font-family: "League Spartan", sans-serif;
+    margin-top: 3%;
+    font-size: 355%;
+
+}
+.cont_login form{
+    width: 80%;
+    margin: 3% auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 50px;
+}
+.cont_login form button{
+    grid-column: 1 / -1;
+    margin: 30px auto 0 auto;
+    width: 50%;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 160%;
+    background-color: #5454E8;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cont_login form button:hover{
+    background-color: #3b3bc9;
+    transform: scale(1.05);
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+.campo label{
+    color: #0C2070;
+    font-family: "League Spartan", sans-serif;
+    font-size: 224%;
+}
+.campo input{
+    margin-top: 4%;
+    width: 100%;
+    height: 5dvh;
+    font-size: 130%;
+}
